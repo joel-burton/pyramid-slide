@@ -45,29 +45,4 @@ brickSelector.addEventListener('change', drawPyramid);
 
 
 var slider = document.getElementById('slider');
-slider.addEventListener('change', drawPyramid);
-
-
-// var lastX;
-// slider.addEventListener('mousedown', function(event){
-//     if (event.which == 1) {
-//         lastX = event.pageX;
-//         addEventListener('mousemove', moved);
-//     }
-// });
-//
-// function buttonPressed(event) {
-//     if (event.buttons == null) {
-//         return event.which != 0;
-//     } else {
-//         return event.buttons != 0;
-//     }
-// }
-//
-// function moved(event) {
-//     if (!buttonPressed(event)) {
-//         removeEventListener("mousemove", moved);
-//     } else {
-//     drawPyramid;
-//     }
-// }
+slider.addEventListener('input', drawPyramid);
