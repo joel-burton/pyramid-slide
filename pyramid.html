@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-
-<h1>PYRAMID SLIDE</h1>
-<div class="menu">
-    <div class="sub-menu">
-        <label for="brick-select">Brick Symbol: </label>
-        <select id="brick-select" name="brick-select">
-            <option value="#">#</option>
-            <option value="@">@</option>
-            <option value="X">X</option>
-            <option value="$">$</option>
-        </select>
-    </div>
-    <div class="sub-menu">
-        <label for="pyramid-size">How High?</label>
-        <input id="slider" type="range" name="pyramid-size" value="6" min="1" max="20">
-        <label id="height-label"for="pyramid-size">(a number)</label>
-    </div>
+<div class="banner">
+    <h1>PYRAMID SLIDE</h1>
 </div>
-<br><br>
-<div id="pyramid"></div>
+
+<div id="draw-window">
+    <div id="menu">
+        <div id="inputs">
+            <label for="brick-select" class="input-label">Brick Symbol:
+                <select id="brick-select" name="brick-select">
+                    <option value="#">#</option>
+                    <option value="@">@</option>
+                    <option value="X">X</option>
+                    <option value="$">$</option>
+                </select>
+            </label>
+
+            <label for="pyramid-size" class="input-label">How High?
+                <input id="slider" type="range" name="pyramid-size" value="6" min="1" max="20">
+                <label id="height-label"for="pyramid-size">(a number)</label>
+            </label>
+        </div>
+    </div>
+
+
+    <div id="pyramid"></div>
+</div>
 
 
 <script type="text/javascript" src="pyramid.js"></script>
